@@ -1,28 +1,28 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+const App = () => (
+  <div>
+    <ul className="nav">
+      <li className="nav-item">
+        <a className="nav-link" href="#">
+          Clicky Game
+        </a>
+      </li>
+      <li className="nav-item">Click and image to begin!</li>
+      <li className="nav-item">
+        Score: <span />| Top Score: <span />
+      </li>
+    </ul>
+    <div className="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 className="titletext">Clicky Game!</h1>
+        <p className="subtext">
+          Click on an image to earn points, but don't click on any more than
+          once!
+        </p>
       </div>
-    );
-  }
-}
+    </div>
+  </div>
+)
 
-export default App;
+export default App
